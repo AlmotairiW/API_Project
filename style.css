@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.gBackground{
+    background-color:rgb(213, 245, 191);
+    border:solid 1px rgb(122, 214, 122);
+    width: 970px;
+    padding:20px;
+    margin: auto;
+}
+
+.pBackground{
+    background-color:rgb(122, 214, 122);
+    width: 900px;
+    padding:20px;
+    margin-left: 15px;
+    justify-content: space-evenly;
+}
+.header{
+    background-color: rgb(213, 245, 191);
+    border:solid 1px rgb(170, 63, 98);
+    width: 830px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-left: 15px;
+    
+}
+.header h1{
+    color:rgb(170, 63, 98);
+}
+.content{
+    width: 760px;
+    padding: 20px;
+    margin-left: 250px;
+}
+.content button{
+    background-color: rgb(170, 63, 98);
+	color:white;
+	border:solid 1px black;
+	border-radius: 3px;
+    width: 60px;
+    height: 40px;
+    margin-left: 50px;
+    
+}
+
+.API{
+    width: 700px;
+    padding: 20px;
+    display: inline-block;
+}
+.API img{
+    width:300px;
+    height:200px;
+}
