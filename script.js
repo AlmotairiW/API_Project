@@ -21,7 +21,7 @@ $(document).ready(function(){
         const settings2 = {
         "async": true,
         "crossDomain": true,
-        "url": "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=meat",
+        "url": "https://edamam-food-and-grocery-database.p.rapidapi.com/parser?ingr=fudge",
         "method": "GET",
         "headers": {
         "x-rapidapi-key": "9a0abae874msh2da2d3068725f2ep1a9982jsn114baac1ccb5",
@@ -32,10 +32,10 @@ $(document).ready(function(){
 $.ajax(settings2).done(function (response) {
 
     console.log(response);
-    var rand = Math.floor(Math.random() * (10 - 1 + 1) + 1); // random number between 1 - 10
+    var rand = Math.floor(Math.random() * (10 ) + 1); // random number between 1 - 10
     var src = response.hints[rand].food.image;
     if(src != null)
-        $(".hungry").append("<img src='" + response.hints[rand].food.image + "'>")
+        $(".hungry").append("<img src='" + src + "'>")
     else
         $(".hungry").append("<img src='Hungry1.png'>")
 
